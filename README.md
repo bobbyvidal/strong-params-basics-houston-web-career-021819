@@ -8,7 +8,7 @@ To understand the goal of strong params, let's pretend that you run a pharmacy. 
 ## Setup
 
 To prevent confusion, in previous lessons I manually turned off the strong parameter requirement. Let's discover first why strong params were created and then work with them.
-
+lea
 ## Why Strong Params
 
 In the Rails app in this lesson there is our blog application with Strong Params *disabled*. Create a new Post by going to `/posts/new`. Once you have created that post, go ahead and edit it at `/posts/1/edit`. You'll notice there is no Description field! In this case, I don't want the user to be able to modify the description of a post once it's been created. This happens in all kinds of different cases. You wouldn't want a bank user to be able to edit their account number or balance, would you? But! `balance` is still a field on the account class. In this case, `description` is still an attribute for the post class. Let's see if a user could "hack" our form to be able to modify the `description`.
